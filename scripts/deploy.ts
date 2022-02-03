@@ -13,13 +13,20 @@ async function main() {
   // manually to make sure everything is compiled
   // await hre.run('compile');
 
-  // We get the contract to deploy
+  //We get the contract to deploy
   const BlackGold = await ethers.getContractFactory("BLACKGOLDTOKEN");
   const blackgold = await BlackGold.deploy();
 
   await blackgold.deployed();
 
   console.log("BLACKGOLDTOKEN deployed to:", blackgold.address);
+
+  const BlackGold1155 = await ethers.getContractFactory("BLACKGOLD1155");
+  const blackgold1155 = await BlackGold1155.deploy();
+
+  await blackgold1155.deployed();
+
+  console.log("BLACKGOLDTOKEN1155 deployed to:", blackgold1155.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
