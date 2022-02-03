@@ -14,7 +14,7 @@ contract BLACKGOLD is ERC721, Ownable {
     constructor() ERC721("BLACKGOLDTOKEN", "BGT") {}
 
     function _baseURI() internal pure override returns (string memory) {
-        return "https://ipfs.io/ipfs/QmZg7FhDyqqUyLsJLgooBfcuQ5A8n1agoiWrSbvUwuDQWz?filename=spanchbob.png";
+        return "https://ipfs.io/ipfs/QmWvLf8u1Vsd4TFLM289m3SxCwFNcc6NT7wYA3MbP1EjqK?filename=metadata.json";
     }
     
     function safeMint(address to) public onlyOwner {
