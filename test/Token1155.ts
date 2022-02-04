@@ -28,7 +28,7 @@ describe("ERC1151", function () {
         expect(await hardhatToken.balanceOf(owner.address, 1)).to.equal(50);
     });
     
-    it.only("Mint Batch token", async function () {
+    it("Mint Batch token", async function () {
         await hardhatToken.mintBatch(owner.address, [1, 2, 3], [100, 200, 300], 123);
         expect(await hardhatToken.balanceOf(owner.address, 1)).to.equal(100);
         expect(await hardhatToken.balanceOf(owner.address, 2)).to.equal(200);
