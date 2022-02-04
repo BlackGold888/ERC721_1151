@@ -14,12 +14,12 @@ async function main() {
   // await hre.run('compile');
 
   //We get the contract to deploy
-  const BlackGold = await ethers.getContractFactory("BLACKGOLDTOKEN");
-  const blackgold = await BlackGold.deploy();
+  // const BlackGold = await ethers.getContractFactory("BLACKGOLDTOKEN");
+  // const blackgold = await BlackGold.deploy();
 
-  await blackgold.deployed();
+  // await blackgold.deployed();
 
-  console.log("BLACKGOLDTOKEN deployed to:", blackgold.address);
+  // console.log("BLACKGOLDTOKEN deployed to:", blackgold.address);
 
   const BlackGold1155 = await ethers.getContractFactory("BLACKGOLD1155");
   const blackgold1155 = await BlackGold1155.deploy();
